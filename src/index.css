@@ -75,3 +75,7 @@ button:focus-visible {
 .slick-dots.slick-thumb li.slick-active {
   color: #01D167 !important;
 }
+
+.slick-slide {
+  padding: 0 10px;
+}

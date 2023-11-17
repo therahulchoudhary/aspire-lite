@@ -57,7 +57,8 @@
 }
 
 .carouselBlock {
-    width: 100% !important;
+    width: 100%;
+    margin-right: 24px;
 }
 
 .bottomSheet {
@@ -88,7 +89,8 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
+    width: 20%;
 }
 
 .confirmationModal button:nth-child(1), .addCardModal button:nth-child(1) {

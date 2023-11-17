@@ -18,11 +18,8 @@ const CustomCard = (props: Props): JSX.Element => {
   const [showCardNumber, setShowCardNumber] = useState<boolean>(false);
   const { cardNumber, expiry, cvv, name, status } = props;
 
-  const handleShowCard = () => {
-    setShowCardNumber(true);
-    setTimeout(() => {
-      setShowCardNumber(false);
-    }, 3000);
+  const toggleCardDetails = () => {
+    setShowCardNumber(showCardNumber ? false : true);
   };
 
   return (
@@ -78,9 +75,9 @@ const CustomCard = (props: Props): JSX.Element => {
           <img src={cardType} alt="card_type" />
         </div>
       </div>
-      <div className={`${styles.showCardButton}`} onClick={handleShowCard}>
+      <div className={`${styles.showCardButton}`} onClick={toggleCardDetails}>
         <img src={eye} alt="eye_icon" />
-        <p className="m-0">Show card number</p>
+        <p className="m-0">{showCardNumber ? 'Hide' : 'Show'} card number</p>
       </div>
     </div>
   );

@@ -67,6 +67,7 @@
     text-align: center;
     font-size: 13px;
     cursor: pointer;
+    width: 19%;
 }
 
 .confirmationModal button:nth-child(1), .addCardModal button:nth-child(1) {

@@ -8,10 +8,9 @@ export const getRandomCardNumber = (): string => {
 }
 
 export const getRandomExpiry = (): string => {
-    const randomMonth = Math.floor(Math.random() * 12) + 1; // Random month between 1 and 12
-    const randomYear = new Date().getFullYear() + Math.floor(Math.random() * 5); // Random year within the next 5 years
+    const randomMonth = Math.floor(Math.random() * 12) + 1;
+    const randomYear = new Date().getFullYear() + Math.floor(Math.random() * 5); 
 
-    // Format the month and year with leading zeros if necessary
     const formattedMonth = String(randomMonth).padStart(2, '0');
     const formattedYear = String(randomYear).slice(-2);
 
@@ -19,8 +18,8 @@ export const getRandomExpiry = (): string => {
 }
 
 export const validateString = (inputString: string): boolean => {
-    const alphabetRegex = /^[a-zA-Z]+$/;
-    if(inputString === "") {
+    const alphabetRegex = /^[a-zA-Z\s]+$/;
+    if (inputString === "") {
         return false;
     }
     return alphabetRegex.test(inputString);
