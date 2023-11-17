@@ -6,7 +6,7 @@ export interface ReduxAction<T> {
     payload: T;
 }
 
-export const initialState = {
+export const initialState : IReduxState = {
     count : 0, 
     availableCards: []
 }
