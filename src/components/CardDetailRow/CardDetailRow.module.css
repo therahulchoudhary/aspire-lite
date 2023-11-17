@@ -1,0 +1,8 @@
+.cardDetailRow {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.cardDetailRow p {
+    font-size: 14px;
+    font-weight: 700;
+}

@@ -1,0 +1,17 @@
+.navbar {
+    padding: 48px;
+    background: #0C365A;
+    height: 100vh;
+    font-family: 'Open Sans';
+}
+
+.active {
+    font-weight: 500;
+    color: #01D167 !important;
+    font-size: 16px;
+}
+
+.inactive {
+    color: white;
+    font-size: 16px;
+}

@@ -1,0 +1,51 @@
+.customCard {
+    background-color: #01D167;
+    padding: 23px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+
+.customCard h2 {
+    font-weight: 700;
+}
+
+.showCardButton {
+    position: absolute;
+    z-index: 6;
+    top: -24px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-weight: 700;
+    color: #01D167;
+    padding: 2px 6px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
+.customCard::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 10px;
+    background-color: white;
+    z-index: -1;
+}
+
+.showCardButton p {
+    font-size: 12px;
+    padding-left: 6px;
+}
+
+.inactive {
+    background-color: #e3e3e3;
+}
+
+.cardNumber {
+    letter-spacing: 1px;
+}
